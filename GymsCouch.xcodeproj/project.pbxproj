@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -61,14 +61,62 @@
 		1AA4A9D7231D1B47005B5DB3 /* GymsCouch */ = {
 			isa = PBXGroup;
 			children = (
+				1AA4A9EB231D1DD2005B5DB3 /* Helpers */,
+				1AA4A9EE231D1DE1005B5DB3 /* Network */,
+				1AA4A9EC231D1DD6005B5DB3 /* Model */,
+				1AA4A9EA231D1DCD005B5DB3 /* View */,
+				1AA4A9ED231D1DD9005B5DB3 /* Controller */,
+				1AA4A9EF231D1E3F005B5DB3 /* ViewModels */,
 				1AA4A9D8231D1B47005B5DB3 /* AppDelegate.swift */,
-				1AA4A9DA231D1B47005B5DB3 /* ViewController.swift */,
-				1AA4A9DC231D1B47005B5DB3 /* Main.storyboard */,
 				1AA4A9DF231D1B49005B5DB3 /* Assets.xcassets */,
-				1AA4A9E1231D1B49005B5DB3 /* LaunchScreen.storyboard */,
 				1AA4A9E4231D1B49005B5DB3 /* Info.plist */,
 			);
 			path = GymsCouch;
+			sourceTree = "<group>";
+		};
+		1AA4A9EA231D1DCD005B5DB3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1AA4A9E1231D1B49005B5DB3 /* LaunchScreen.storyboard */,
+				1AA4A9DC231D1B47005B5DB3 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1AA4A9EB231D1DD2005B5DB3 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		1AA4A9EC231D1DD6005B5DB3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1AA4A9ED231D1DD9005B5DB3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1AA4A9DA231D1B47005B5DB3 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1AA4A9EE231D1DE1005B5DB3 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		1AA4A9EF231D1E3F005B5DB3 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		3845092678D8C6394F6D0CA1 /* Pods */ = {
@@ -77,7 +125,6 @@
 				B9863C94DBDB033E48630E85 /* Pods-GymsCouch.debug.xcconfig */,
 				8FFCCBBBF06EFB67931C30E0 /* Pods-GymsCouch.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
