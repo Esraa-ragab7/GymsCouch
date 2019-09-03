@@ -25,9 +25,9 @@ protocol CustomTextFieldAnimatedDelegate {
     // MARK: - Properities
     var datePicker: UIDatePicker!
     var pickerView = UIPickerView()
-    var dataOfPicker: [InvoiceProducts] = []
+    var dataOfPicker: [String] = []
     var delegate: CustomTextFieldAnimatedDelegate?
-    var product: InvoiceProducts?
+    var product: String?
     
     // MARK: - init
     required init(coder aDecoder: NSCoder) {
@@ -78,6 +78,12 @@ protocol CustomTextFieldAnimatedDelegate {
         }
     }
     
+    @IBInspectable var secretInput: Bool = false {
+        didSet {
+            textField.isSecureTextEntry = secretInput
+        }
+    }
+    
     @IBInspectable var keyboardType: String = "" {
         didSet {
             if keyboardType == "EMAIL" {
@@ -116,7 +122,8 @@ protocol CustomTextFieldAnimatedDelegate {
     }
     
     @IBAction func magicButtonAction(_ sender: Any) {
-        delegate?.selectOrDeselectFunc(id: self.tag)
+        secretInput = !secretInput
+        magicButton.isSelected = !secretInput
     }
     
 }
@@ -157,7 +164,7 @@ extension CustomTextFieldAnimated: UITextFieldDelegate {
 extension CustomTextFieldAnimated: UIPickerViewDelegate {
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         product = dataOfPicker[row]
-        textField.text = dataOfPicker[row].name
+        textField.text = dataOfPicker[row]
     }
 }
 
@@ -174,7 +181,7 @@ extension CustomTextFieldAnimated: UIPickerViewDataSource {
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         
-        return dataOfPicker[row].name
+        return dataOfPicker[row]
     }
 }
 
