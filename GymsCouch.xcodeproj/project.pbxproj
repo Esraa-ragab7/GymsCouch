@@ -23,6 +23,7 @@
 		1A5ADB12231EDC5000CBAF7B /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5ADB10231EDC5000CBAF7B /* HomeTableViewCell.swift */; };
 		1A5ADB13231EDC5000CBAF7B /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A5ADB11231EDC5000CBAF7B /* HomeTableViewCell.xib */; };
 		1A5ADB15231EDE0700CBAF7B /* HomeResponseModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5ADB14231EDE0700CBAF7B /* HomeResponseModal.swift */; };
+		1A5ADB17231EE54E00CBAF7B /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5ADB16231EE54E00CBAF7B /* Data.swift */; };
 		1AA4A9D9231D1B47005B5DB3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA4A9D8231D1B47005B5DB3 /* AppDelegate.swift */; };
 		1AA4A9DB231D1B47005B5DB3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA4A9DA231D1B47005B5DB3 /* LoginViewController.swift */; };
 		1AA4A9DE231D1B47005B5DB3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AA4A9DC231D1B47005B5DB3 /* Main.storyboard */; };
@@ -51,6 +52,7 @@
 		1A5ADB10231EDC5000CBAF7B /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		1A5ADB11231EDC5000CBAF7B /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
 		1A5ADB14231EDE0700CBAF7B /* HomeResponseModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeResponseModal.swift; sourceTree = "<group>"; };
+		1A5ADB16231EE54E00CBAF7B /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		1AA4A9D5231D1B47005B5DB3 /* GymsCouch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GymsCouch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AA4A9D8231D1B47005B5DB3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1AA4A9DA231D1B47005B5DB3 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -166,6 +168,7 @@
 				1A01C412231E8BFC002ADB6F /* Gym.swift */,
 				1A01C414231E9041002ADB6F /* Location.swift */,
 				1A5ADB14231EDE0700CBAF7B /* HomeResponseModal.swift */,
+				1A5ADB16231EE54E00CBAF7B /* Data.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -351,6 +354,7 @@
 				1AA4A9F7231D4775005B5DB3 /* Constants.swift in Sources */,
 				1A01C404231E6989002ADB6F /* uiViewExtention.swift in Sources */,
 				1A5ADB05231ECD2B00CBAF7B /* HomeViewModel.swift in Sources */,
+				1A5ADB17231EE54E00CBAF7B /* Data.swift in Sources */,
 				1A01C411231E7DEA002ADB6F /* HomeViewController.swift in Sources */,
 				1A5ADB15231EDE0700CBAF7B /* HomeResponseModal.swift in Sources */,
 			);
