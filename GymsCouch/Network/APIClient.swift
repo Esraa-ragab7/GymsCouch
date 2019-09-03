@@ -12,8 +12,8 @@ import UIKit
 class APIClient {
     
     // MARK: - getGyms
-    static func getGyms(completion:@escaping (Result<[Home],Error>)->Void) {
-        AF.request(APIRouter.getHome).responseDecodable { (response: DataResponse<[Home]>) in
+    static func getGyms(queries: [Queries], completion:@escaping (Result<HomeResponseModal,Error>)->Void) {
+        AF.request(APIRouter.getGyms(queries: queries)).responseDecodable { (response: DataResponse<HomeResponseModal>) in
             completion(response.result)
         }
     }

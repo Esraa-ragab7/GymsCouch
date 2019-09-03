@@ -53,7 +53,7 @@ enum APIRouter: URLRequestConvertible {
         case .getGyms:
             return nil
         case .getGymDetail(let id):
-            return id
+            return "/\(id)"
         }
     }
     
