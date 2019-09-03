@@ -7,18 +7,21 @@
 //
 
 import UIKit
+import Kingfisher
 
 class HomeTableViewCell: UITableViewCell {
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    // MARK: - Outlets
+    @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var gymImageView: UIImageView!
+    
+    // MARK: - Display Data
+    func displayData(description: String, title: String, imagePath: String){
+        descriptionLabel.text = description
+        titleLabel.text = title
+        gymImageView.kf.setImage(with: URL(string: imagePath))
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
+    
     
 }
