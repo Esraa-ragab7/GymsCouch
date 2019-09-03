@@ -16,6 +16,8 @@
 		1A01C40D231E69E1002ADB6F /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A01C40C231E69E1002ADB6F /* Color.swift */; };
 		1A01C40F231E6B04002ADB6F /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A01C40E231E6B04002ADB6F /* DesignableView.swift */; };
 		1A01C411231E7DEA002ADB6F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A01C410231E7DEA002ADB6F /* HomeViewController.swift */; };
+		1A01C413231E8BFC002ADB6F /* Gym.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A01C412231E8BFC002ADB6F /* Gym.swift */; };
+		1A01C415231E9042002ADB6F /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A01C414231E9041002ADB6F /* Location.swift */; };
 		1AA4A9D9231D1B47005B5DB3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA4A9D8231D1B47005B5DB3 /* AppDelegate.swift */; };
 		1AA4A9DB231D1B47005B5DB3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA4A9DA231D1B47005B5DB3 /* LoginViewController.swift */; };
 		1AA4A9DE231D1B47005B5DB3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AA4A9DC231D1B47005B5DB3 /* Main.storyboard */; };
@@ -37,6 +39,8 @@
 		1A01C40C231E69E1002ADB6F /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		1A01C40E231E6B04002ADB6F /* DesignableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
 		1A01C410231E7DEA002ADB6F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		1A01C412231E8BFC002ADB6F /* Gym.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gym.swift; sourceTree = "<group>"; };
+		1A01C414231E9041002ADB6F /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		1AA4A9D5231D1B47005B5DB3 /* GymsCouch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GymsCouch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AA4A9D8231D1B47005B5DB3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1AA4A9DA231D1B47005B5DB3 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -131,6 +135,8 @@
 		1AA4A9EC231D1DD6005B5DB3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				1A01C412231E8BFC002ADB6F /* Gym.swift */,
+				1A01C414231E9041002ADB6F /* Location.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -301,7 +307,9 @@
 				1AA4A9DB231D1B47005B5DB3 /* LoginViewController.swift in Sources */,
 				1AA4A9F6231D4775005B5DB3 /* APIRouter.swift in Sources */,
 				1A01C40F231E6B04002ADB6F /* DesignableView.swift in Sources */,
+				1A01C413231E8BFC002ADB6F /* Gym.swift in Sources */,
 				1A01C40D231E69E1002ADB6F /* Color.swift in Sources */,
+				1A01C415231E9042002ADB6F /* Location.swift in Sources */,
 				1A01C3FB231DDAD0002ADB6F /* SplashScreenViewController.swift in Sources */,
 				1A01C3FC231DDAD0002ADB6F /* RootViewController.swift in Sources */,
 				1AA4A9D9231D1B47005B5DB3 /* AppDelegate.swift in Sources */,
