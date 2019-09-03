@@ -19,6 +19,10 @@
 		1A01C413231E8BFC002ADB6F /* Gym.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A01C412231E8BFC002ADB6F /* Gym.swift */; };
 		1A01C415231E9042002ADB6F /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A01C414231E9041002ADB6F /* Location.swift */; };
 		1A5ADB05231ECD2B00CBAF7B /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5ADB04231ECD2B00CBAF7B /* HomeViewModel.swift */; };
+		1A5ADB0F231ED95100CBAF7B /* stringExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5ADB0E231ED95000CBAF7B /* stringExtention.swift */; };
+		1A5ADB12231EDC5000CBAF7B /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5ADB10231EDC5000CBAF7B /* HomeTableViewCell.swift */; };
+		1A5ADB13231EDC5000CBAF7B /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A5ADB11231EDC5000CBAF7B /* HomeTableViewCell.xib */; };
+		1A5ADB15231EDE0700CBAF7B /* HomeResponseModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5ADB14231EDE0700CBAF7B /* HomeResponseModal.swift */; };
 		1AA4A9D9231D1B47005B5DB3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA4A9D8231D1B47005B5DB3 /* AppDelegate.swift */; };
 		1AA4A9DB231D1B47005B5DB3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA4A9DA231D1B47005B5DB3 /* LoginViewController.swift */; };
 		1AA4A9DE231D1B47005B5DB3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AA4A9DC231D1B47005B5DB3 /* Main.storyboard */; };
@@ -43,6 +47,10 @@
 		1A01C412231E8BFC002ADB6F /* Gym.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gym.swift; sourceTree = "<group>"; };
 		1A01C414231E9041002ADB6F /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		1A5ADB04231ECD2B00CBAF7B /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		1A5ADB0E231ED95000CBAF7B /* stringExtention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = stringExtention.swift; sourceTree = "<group>"; };
+		1A5ADB10231EDC5000CBAF7B /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		1A5ADB11231EDC5000CBAF7B /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
+		1A5ADB14231EDE0700CBAF7B /* HomeResponseModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeResponseModal.swift; sourceTree = "<group>"; };
 		1AA4A9D5231D1B47005B5DB3 /* GymsCouch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GymsCouch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AA4A9D8231D1B47005B5DB3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1AA4A9DA231D1B47005B5DB3 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -77,6 +85,22 @@
 				1A01C408231E69C0002ADB6F /* CustomTextFieldAnimated.xib */,
 			);
 			path = CustomObjects;
+			sourceTree = "<group>";
+		};
+		1A5ADB06231ED28500CBAF7B /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				1A5ADB10231EDC5000CBAF7B /* HomeTableViewCell.swift */,
+				1A5ADB11231EDC5000CBAF7B /* HomeTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		1A5ADB07231ED29500CBAF7B /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		1AA4A9CC231D1B47005B5DB3 = {
@@ -116,6 +140,7 @@
 		1AA4A9EA231D1DCD005B5DB3 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1A5ADB07231ED29500CBAF7B /* Cells */,
 				1AA4A9E1231D1B49005B5DB3 /* LaunchScreen.storyboard */,
 				1AA4A9DC231D1B47005B5DB3 /* Main.storyboard */,
 				1A01C3FD231E4BE9002ADB6F /* Home.storyboard */,
@@ -130,6 +155,7 @@
 				1A01C403231E6989002ADB6F /* uiViewExtention.swift */,
 				1A01C40E231E6B04002ADB6F /* DesignableView.swift */,
 				1A01C40C231E69E1002ADB6F /* Color.swift */,
+				1A5ADB0E231ED95000CBAF7B /* stringExtention.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -139,6 +165,7 @@
 			children = (
 				1A01C412231E8BFC002ADB6F /* Gym.swift */,
 				1A01C414231E9041002ADB6F /* Location.swift */,
+				1A5ADB14231EDE0700CBAF7B /* HomeResponseModal.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -146,6 +173,7 @@
 		1AA4A9ED231D1DD9005B5DB3 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				1A5ADB06231ED28500CBAF7B /* Cells */,
 				1AA4A9DA231D1B47005B5DB3 /* LoginViewController.swift */,
 				1A01C3FA231DDAD0002ADB6F /* RootViewController.swift */,
 				1A01C3F9231DDACF002ADB6F /* SplashScreenViewController.swift */,
@@ -250,6 +278,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1AA4A9E3231D1B49005B5DB3 /* LaunchScreen.storyboard in Resources */,
+				1A5ADB13231EDC5000CBAF7B /* HomeTableViewCell.xib in Resources */,
 				1A01C40A231E69C0002ADB6F /* CustomTextFieldAnimated.xib in Resources */,
 				1AA4A9E0231D1B49005B5DB3 /* Assets.xcassets in Resources */,
 				1AA4A9DE231D1B47005B5DB3 /* Main.storyboard in Resources */,
@@ -312,7 +341,9 @@
 				1A01C40F231E6B04002ADB6F /* DesignableView.swift in Sources */,
 				1A01C413231E8BFC002ADB6F /* Gym.swift in Sources */,
 				1A01C40D231E69E1002ADB6F /* Color.swift in Sources */,
+				1A5ADB12231EDC5000CBAF7B /* HomeTableViewCell.swift in Sources */,
 				1A01C415231E9042002ADB6F /* Location.swift in Sources */,
+				1A5ADB0F231ED95100CBAF7B /* stringExtention.swift in Sources */,
 				1A01C3FB231DDAD0002ADB6F /* SplashScreenViewController.swift in Sources */,
 				1A01C3FC231DDAD0002ADB6F /* RootViewController.swift in Sources */,
 				1AA4A9D9231D1B47005B5DB3 /* AppDelegate.swift in Sources */,
@@ -321,6 +352,7 @@
 				1A01C404231E6989002ADB6F /* uiViewExtention.swift in Sources */,
 				1A5ADB05231ECD2B00CBAF7B /* HomeViewModel.swift in Sources */,
 				1A01C411231E7DEA002ADB6F /* HomeViewController.swift in Sources */,
+				1A5ADB15231EDE0700CBAF7B /* HomeResponseModal.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
