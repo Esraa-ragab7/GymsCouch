@@ -32,6 +32,10 @@
 		1AA4A9F6231D4775005B5DB3 /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA4A9F3231D4774005B5DB3 /* APIRouter.swift */; };
 		1AA4A9F7231D4775005B5DB3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA4A9F4231D4774005B5DB3 /* Constants.swift */; };
 		1AA4A9F8231D4775005B5DB3 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA4A9F5231D4775005B5DB3 /* APIClient.swift */; };
+		E90EFFE2C7F848FF1CF3DD6A /* Pods_GymsCouch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E50BC789C3238D26D636EC38 /* Pods_GymsCouch.framework */; };
+		F2BBF435231F04C000D172F0 /* GymDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BBF434231F04C000D172F0 /* GymDetailsViewController.swift */; };
+		F2BBF437231F089F00D172F0 /* GymDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BBF436231F089F00D172F0 /* GymDetailsViewModel.swift */; };
+		F2BBF439231F0F4600D172F0 /* ValidationFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BBF438231F0F4600D172F0 /* ValidationFunctions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,8 +66,24 @@
 		1AA4A9F3231D4774005B5DB3 /* APIRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
 		1AA4A9F4231D4774005B5DB3 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		1AA4A9F5231D4775005B5DB3 /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		5DB7F18D14DF685157866EDB /* Pods-GymsCouch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GymsCouch.debug.xcconfig"; path = "Target Support Files/Pods-GymsCouch/Pods-GymsCouch.debug.xcconfig"; sourceTree = "<group>"; };
+		7FCF9D8D6083ED2E7E2FB09E /* Pods-GymsCouch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GymsCouch.release.xcconfig"; path = "Target Support Files/Pods-GymsCouch/Pods-GymsCouch.release.xcconfig"; sourceTree = "<group>"; };
 		E50BC789C3238D26D636EC38 /* Pods_GymsCouch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GymsCouch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2BBF434231F04C000D172F0 /* GymDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymDetailsViewController.swift; sourceTree = "<group>"; };
+		F2BBF436231F089F00D172F0 /* GymDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymDetailsViewModel.swift; sourceTree = "<group>"; };
+		F2BBF438231F0F4600D172F0 /* ValidationFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationFunctions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0DFAE7C82587527FAB697C82 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E90EFFE2C7F848FF1CF3DD6A /* Pods_GymsCouch.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		1A01C407231E69AC002ADB6F /* CustomObjects */ = {
@@ -79,7 +99,6 @@
 			isa = PBXGroup;
 			children = (
 				1A5ADB10231EDC5000CBAF7B /* HomeTableViewCell.swift */,
-				1A5ADB11231EDC5000CBAF7B /* HomeTableViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -87,6 +106,7 @@
 		1A5ADB07231ED29500CBAF7B /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				1A5ADB11231EDC5000CBAF7B /* HomeTableViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -155,6 +175,7 @@
 				1A01C414231E9041002ADB6F /* Location.swift */,
 				1A5ADB14231EDE0700CBAF7B /* HomeResponseModal.swift */,
 				1A5ADB16231EE54E00CBAF7B /* Data.swift */,
+				F2BBF438231F0F4600D172F0 /* ValidationFunctions.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -167,6 +188,7 @@
 				1A01C3FA231DDAD0002ADB6F /* RootViewController.swift */,
 				1A01C3F9231DDACF002ADB6F /* SplashScreenViewController.swift */,
 				1A01C410231E7DEA002ADB6F /* HomeViewController.swift */,
+				F2BBF434231F04C000D172F0 /* GymDetailsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -185,6 +207,7 @@
 			isa = PBXGroup;
 			children = (
 				1A5ADB04231ECD2B00CBAF7B /* HomeViewModel.swift */,
+				F2BBF436231F089F00D172F0 /* GymDetailsViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -192,6 +215,8 @@
 		3845092678D8C6394F6D0CA1 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
+				5DB7F18D14DF685157866EDB /* Pods-GymsCouch.debug.xcconfig */,
+				7FCF9D8D6083ED2E7E2FB09E /* Pods-GymsCouch.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -215,6 +240,7 @@
 				1AA4A9D1231D1B47005B5DB3 /* Sources */,
 				1AA4A9D3231D1B47005B5DB3 /* Resources */,
 				080807FC44AADCFC1A7746C2 /* [CP] Embed Pods Frameworks */,
+				0DFAE7C82587527FAB697C82 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -282,12 +308,24 @@
 			);
 			inputFileListPaths = (
 			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GymsCouch/Pods-GymsCouch-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/ViewAnimator/ViewAnimator.framework",
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ViewAnimator.framework",
+			);
 			runOnlyForDeploymentPostprocessing = 0;
-			shellScript = "
-";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GymsCouch/Pods-GymsCouch-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		98BEBAB993852BCF5F1B6515 /* [CP] Check Pods Manifest.lock */ = {
@@ -333,8 +371,11 @@
 				1AA4A9D9231D1B47005B5DB3 /* AppDelegate.swift in Sources */,
 				1AA4A9F8231D4775005B5DB3 /* APIClient.swift in Sources */,
 				1AA4A9F7231D4775005B5DB3 /* Constants.swift in Sources */,
+				F2BBF439231F0F4600D172F0 /* ValidationFunctions.swift in Sources */,
 				1A01C404231E6989002ADB6F /* uiViewExtention.swift in Sources */,
+				F2BBF435231F04C000D172F0 /* GymDetailsViewController.swift in Sources */,
 				1A5ADB05231ECD2B00CBAF7B /* HomeViewModel.swift in Sources */,
+				F2BBF437231F089F00D172F0 /* GymDetailsViewModel.swift in Sources */,
 				1A5ADB17231EE54E00CBAF7B /* Data.swift in Sources */,
 				1A01C411231E7DEA002ADB6F /* HomeViewController.swift in Sources */,
 				1A5ADB15231EDE0700CBAF7B /* HomeResponseModal.swift in Sources */,
@@ -481,6 +522,7 @@
 		};
 		1AA4A9E8231D1B49005B5DB3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DB7F18D14DF685157866EDB /* Pods-GymsCouch.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -490,7 +532,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Esraa.GymsCouch;
+				PRODUCT_BUNDLE_IDENTIFIER = Esraa.GymsCouch2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -499,6 +541,7 @@
 		};
 		1AA4A9E9231D1B49005B5DB3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7FCF9D8D6083ED2E7E2FB09E /* Pods-GymsCouch.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -508,7 +551,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Esraa.GymsCouch;
+				PRODUCT_BUNDLE_IDENTIFIER = Esraa.GymsCouch2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
