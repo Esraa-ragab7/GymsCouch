@@ -153,13 +153,22 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PjL-Cp-inV">
+                                        <rect key="frame" x="30" y="415" width="354" height="0.0"/>
+                                        <fontDescription key="fontDescription" name="GujaratiSangamMN" family="Gujarati Sangam MN" pointSize="12"/>
+                                        <color key="textColor" cyan="0.07920045405626297" magenta="1" yellow="0.9783311968957874" black="0.33946397569444442" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="1Zp-j1-3wg" firstAttribute="leading" secondItem="9Lf-ze-iWt" secondAttribute="leading" constant="25" id="1Ke-wI-gV5"/>
+                                    <constraint firstItem="PjL-Cp-inV" firstAttribute="top" secondItem="462-Gq-4h0" secondAttribute="bottom" constant="10" id="7Ds-7q-bIN"/>
+                                    <constraint firstAttribute="trailing" secondItem="PjL-Cp-inV" secondAttribute="trailing" constant="30" id="7LC-B6-wyo"/>
                                     <constraint firstItem="bep-ng-V6M" firstAttribute="top" secondItem="9Lf-ze-iWt" secondAttribute="top" constant="40" id="Fav-SC-WFW"/>
                                     <constraint firstItem="462-Gq-4h0" firstAttribute="leading" secondItem="9Lf-ze-iWt" secondAttribute="leading" constant="25" id="Ifr-k4-eEa"/>
                                     <constraint firstItem="1Zp-j1-3wg" firstAttribute="top" secondItem="462-Gq-4h0" secondAttribute="bottom" constant="100" id="JPe-yI-LPX"/>
+                                    <constraint firstItem="PjL-Cp-inV" firstAttribute="leading" secondItem="9Lf-ze-iWt" secondAttribute="leading" constant="30" id="Jda-Pi-nmG"/>
                                     <constraint firstItem="462-Gq-4h0" firstAttribute="top" secondItem="bep-ng-V6M" secondAttribute="bottom" constant="35" id="KRd-HT-h8d"/>
                                     <constraint firstItem="bep-ng-V6M" firstAttribute="leading" secondItem="9Lf-ze-iWt" secondAttribute="leading" constant="25" id="Vge-Lk-7Dv"/>
                                     <constraint firstAttribute="trailing" secondItem="1Zp-j1-3wg" secondAttribute="trailing" constant="25" id="aHj-He-9XO"/>
@@ -178,6 +187,7 @@
                     </view>
                     <connections>
                         <outlet property="emailTextField" destination="s0K-2y-C5D" id="Qsu-e7-DQr"/>
+                        <outlet property="errorLabel" destination="PjL-Cp-inV" id="cju-RN-6C0"/>
                         <outlet property="passwordTextField" destination="TmB-ex-efT" id="Qry-d8-tHn"/>
                     </connections>
                 </viewController>
