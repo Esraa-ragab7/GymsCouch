@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Regular.otf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomTextFieldAnimatedWithImage" customModule="Fatorty" customModuleProvider="target">
+            <connections>
+                <outlet property="animatedLabel" destination="WTZ-Jq-qjx" id="lIO-xg-d5Z"/>
+                <outlet property="leftConstraint" destination="3Xn-jx-Ne4" id="YVj-Os-i90"/>
+                <outlet property="magicButton" destination="Kh3-BY-4eQ" id="sga-v7-t3y"/>
+                <outlet property="textField" destination="aRE-ND-jPm" id="cBk-MP-7M1"/>
+                <outlet property="textView" destination="Iac-UA-MIT" id="9iO-t3-mli"/>
+                <outlet property="topConstraint" destination="oEb-M9-8Yo" id="PBe-15-nM2"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="420" height="85"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iac-UA-MIT">
+                    <rect key="frame" x="0.0" y="0.0" width="420" height="50"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aRE-ND-jPm">
+                            <rect key="frame" x="10" y="20" width="410" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="0L6-ck-B6c"/>
+                            </constraints>
+                            <color key="textColor" red="0.1333333333" green="0.36078431370000003" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Receipt number *" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WTZ-Jq-qjx">
+                            <rect key="frame" x="20" y="10" width="141.5" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="ymw-84-8h4"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
+                            <color key="textColor" red="0.1333333333" green="0.36078431370000003" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kh3-BY-4eQ">
+                            <rect key="frame" x="369" y="4" width="41" height="42"/>
+                            <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                            <state key="normal" image="magic-wand"/>
+                            <state key="disabled" image="magicDeselect"/>
+                            <connections>
+                                <action selector="magicButtonAction:" destination="-1" eventType="touchUpInside" id="ptm-8y-0A4"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="WTZ-Jq-qjx" firstAttribute="leading" secondItem="Iac-UA-MIT" secondAttribute="leading" constant="20" id="3Xn-jx-Ne4"/>
+                        <constraint firstAttribute="trailing" secondItem="Kh3-BY-4eQ" secondAttribute="trailing" constant="10" id="A9Q-Rv-jWQ"/>
+                        <constraint firstAttribute="trailing" secondItem="aRE-ND-jPm" secondAttribute="trailing" id="RFn-uG-CLc"/>
+                        <constraint firstItem="aRE-ND-jPm" firstAttribute="leading" secondItem="Iac-UA-MIT" secondAttribute="leading" constant="10" id="bsz-3o-LM4"/>
+                        <constraint firstItem="Kh3-BY-4eQ" firstAttribute="centerY" secondItem="Iac-UA-MIT" secondAttribute="centerY" id="jwx-VZ-tW7"/>
+                        <constraint firstItem="WTZ-Jq-qjx" firstAttribute="top" secondItem="Iac-UA-MIT" secondAttribute="top" constant="10" id="oEb-M9-8Yo"/>
+                        <constraint firstAttribute="bottom" secondItem="aRE-ND-jPm" secondAttribute="bottom" id="qs4-yo-sTu"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Iac-UA-MIT" secondAttribute="bottom" constant="1" id="GWd-z5-XU9"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Iac-UA-MIT" secondAttribute="trailing" id="HkN-eQ-End"/>
+                <constraint firstItem="Iac-UA-MIT" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="djI-xc-MEU"/>
+                <constraint firstItem="Iac-UA-MIT" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="eWn-oy-AhC"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="84.057971014492765" y="-216.62946428571428"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="magic-wand" width="21" height="21"/>
+        <image name="magicDeselect" width="21" height="21"/>
+    </resources>
+</document>
