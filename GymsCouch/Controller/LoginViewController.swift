@@ -12,6 +12,7 @@ class LoginViewController: UIViewController {
     
     @IBOutlet weak var emailTextField: CustomTextFieldAnimated!
     @IBOutlet weak var passwordTextField: CustomTextFieldAnimated!
+    @IBOutlet weak var errorLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,8 +20,11 @@ class LoginViewController: UIViewController {
     }
 
     @IBAction func SignIn(_ sender: Any) {
-        if emailTextField.textFieldText != "" && passwordTextField.textFieldText != "" {
+        if IsValidEmail(textField: emailTextField.textField) && passwordTextField.textFieldText != "" {
+            UserDefaults.standard.set(true, forKey: "Login")
             AppDelegate.shared.rootViewController.switchToMainScreen()
+        } else {
+            errorLabel.text = "Please Insert Correct Email and Don't let the Password Field Empty."
         }
     }
     
