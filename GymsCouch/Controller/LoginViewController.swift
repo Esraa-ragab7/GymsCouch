@@ -9,12 +9,21 @@
 import UIKit
 
 class LoginViewController: UIViewController {
-
+    
+    @IBOutlet weak var emailTextField: CustomTextFieldAnimated!
+    @IBOutlet weak var passwordTextField: CustomTextFieldAnimated!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
+    @IBAction func SignIn(_ sender: Any) {
+        if emailTextField.textFieldText != "" && passwordTextField.textFieldText != "" {
+            AppDelegate.shared.rootViewController.switchToMainScreen()
+        }
+    }
+    
 
 }
 
