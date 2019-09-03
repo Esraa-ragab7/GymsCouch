@@ -17,6 +17,7 @@ class Gym: Codable {
     let closesAt: String?
     let location: Location?
     let images: [String]?
+    var selectedImage: String?
 }
 
 extension Gym {
@@ -30,5 +31,6 @@ extension Gym {
         case closesAt = "closes_at"
         case location
         case images
+        case selectedImage
     }
 }
