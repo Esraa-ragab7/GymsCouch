@@ -18,24 +18,71 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ULb-7K-dnK">
-                                <rect key="frame" x="184" y="437.5" width="46" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4L3-xh-aq3">
+                                <rect key="frame" x="0.0" y="44" width="414" height="70"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SNa-ku-K1K">
+                                        <rect key="frame" x="239" y="14" width="150" height="42"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="150" id="DN3-3U-6Pv"/>
+                                            <constraint firstAttribute="height" constant="42" id="jj0-MF-AUp"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="GujaratiSangamMN-Bold" family="Gujarati Sangam MN" pointSize="18"/>
+                                        <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
+                                        <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="LogOut" image="logout"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="SNa-ku-K1K" secondAttribute="trailing" constant="25" id="Wvc-Ck-YFr"/>
+                                    <constraint firstItem="SNa-ku-K1K" firstAttribute="centerY" secondItem="4L3-xh-aq3" secondAttribute="centerY" id="XLU-xi-HNy"/>
+                                    <constraint firstAttribute="height" constant="70" id="qtB-BN-LeQ"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PHb-5c-UbV">
+                                <rect key="frame" x="0.0" y="114" width="414" height="748"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bFZ-pz-x8B">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="748"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="a0r-Ve-hg7" id="ivZ-a5-QR8"/>
+                                            <outlet property="delegate" destination="a0r-Ve-hg7" id="ikm-mF-QZ0"/>
+                                        </connections>
+                                    </tableView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="bFZ-pz-x8B" firstAttribute="top" secondItem="PHb-5c-UbV" secondAttribute="top" id="Fle-gx-Nzi"/>
+                                    <constraint firstAttribute="bottom" secondItem="bFZ-pz-x8B" secondAttribute="bottom" id="KrB-hc-C9h"/>
+                                    <constraint firstAttribute="trailing" secondItem="bFZ-pz-x8B" secondAttribute="trailing" id="PUG-Xe-ezi"/>
+                                    <constraint firstItem="bFZ-pz-x8B" firstAttribute="leading" secondItem="PHb-5c-UbV" secondAttribute="leading" id="RWc-ZZ-qLs"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="ULb-7K-dnK" firstAttribute="centerY" secondItem="Po1-8f-eMU" secondAttribute="centerY" id="0GV-PE-Iof"/>
-                            <constraint firstItem="ULb-7K-dnK" firstAttribute="centerX" secondItem="Po1-8f-eMU" secondAttribute="centerX" id="5MY-DF-MjU"/>
+                            <constraint firstItem="PHb-5c-UbV" firstAttribute="top" secondItem="4L3-xh-aq3" secondAttribute="bottom" id="A2x-8w-qbM"/>
+                            <constraint firstItem="PHb-5c-UbV" firstAttribute="leading" secondItem="XfP-ne-C1t" secondAttribute="leading" id="BDp-nG-CQ0"/>
+                            <constraint firstItem="4L3-xh-aq3" firstAttribute="leading" secondItem="XfP-ne-C1t" secondAttribute="leading" id="DBf-Q8-Yu5"/>
+                            <constraint firstItem="4L3-xh-aq3" firstAttribute="top" secondItem="XfP-ne-C1t" secondAttribute="top" id="WGo-ku-ahI"/>
+                            <constraint firstItem="XfP-ne-C1t" firstAttribute="bottom" secondItem="PHb-5c-UbV" secondAttribute="bottom" id="bQV-7z-XZ5"/>
+                            <constraint firstItem="XfP-ne-C1t" firstAttribute="trailing" secondItem="PHb-5c-UbV" secondAttribute="trailing" id="nE5-ns-s5U"/>
+                            <constraint firstItem="XfP-ne-C1t" firstAttribute="trailing" secondItem="4L3-xh-aq3" secondAttribute="trailing" id="sfJ-m3-vKN"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="XfP-ne-C1t"/>
                     </view>
+                    <connections>
+                        <outlet property="gymsTabelView" destination="bFZ-pz-x8B" id="svo-J6-EeX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c6a-uz-2zy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="96" y="172"/>
+            <point key="canvasLocation" x="95.652173913043484" y="171.42857142857142"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="logout" width="22.5" height="22.5"/>
+    </resources>
 </document>
