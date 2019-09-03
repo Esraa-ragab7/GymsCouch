@@ -7,3 +7,18 @@
 //
 
 import Foundation
+
+class Data: Codable {
+    let items : [Gym]?
+    let totalPages : Int?
+    let totalCount : Int?
+}
+
+extension Data {
+    
+    enum CodingKeys: String , CodingKey {
+        case items
+        case totalPages = "total_pages"
+        case totalCount = "total_count"
+    }
+}
