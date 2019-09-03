@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gwv-LW-upa">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,19 +10,184 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Splash Screen View Controller-->
+        <scene sceneID="5JA-jA-Y5I">
+            <objects>
+                <viewController storyboardIdentifier="SplashScreenViewController" id="gwv-LW-upa" customClass="SplashScreenViewController" customModule="GymsCouch" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4P3-on-C3Y">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash" translatesAutoresizingMaskIntoConstraints="NO" id="EPf-f6-86D">
+                                <rect key="frame" x="0.0" y="142" width="414" height="612"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="EPf-f6-86D" firstAttribute="leading" secondItem="4P3-on-C3Y" secondAttribute="leading" id="AnJ-8z-YRM"/>
+                            <constraint firstItem="EPf-f6-86D" firstAttribute="centerY" secondItem="4P3-on-C3Y" secondAttribute="centerY" id="NCi-Lh-EWY"/>
+                            <constraint firstItem="EPf-f6-86D" firstAttribute="centerX" secondItem="4P3-on-C3Y" secondAttribute="centerX" id="k1q-A0-4Gd"/>
+                            <constraint firstAttribute="trailing" secondItem="EPf-f6-86D" secondAttribute="trailing" id="rqx-pP-I8e"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2ln-v7-XEe"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d31-g7-c6Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-666" y="35"/>
+        </scene>
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="GymsCouch" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="BYZ-38-t0r" customClass="LoginViewController" customModule="GymsCouch" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Lf-ze-iWt">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bep-ng-V6M">
+                                        <rect key="frame" x="25" y="40" width="150" height="200"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loading" translatesAutoresizingMaskIntoConstraints="NO" id="wTG-QS-5K2">
+                                                <rect key="frame" x="0.0" y="0.0" width="150" height="140"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="140" id="yXh-C7-qfj"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign in" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2kB-17-h2v">
+                                                <rect key="frame" x="0.0" y="150" width="92.5" height="50"/>
+                                                <fontDescription key="fontDescription" name="GujaratiSangamMN-Bold" family="Gujarati Sangam MN" pointSize="26"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="wTG-QS-5K2" firstAttribute="leading" secondItem="bep-ng-V6M" secondAttribute="leading" id="8x3-Or-bpZ"/>
+                                            <constraint firstItem="wTG-QS-5K2" firstAttribute="top" secondItem="bep-ng-V6M" secondAttribute="top" id="Hhn-Cv-PDM"/>
+                                            <constraint firstItem="2kB-17-h2v" firstAttribute="leading" secondItem="bep-ng-V6M" secondAttribute="leading" id="U3h-cS-9gm"/>
+                                            <constraint firstAttribute="height" constant="200" id="Yi8-zA-Hk6"/>
+                                            <constraint firstAttribute="bottom" secondItem="2kB-17-h2v" secondAttribute="bottom" id="o6h-xP-4wc"/>
+                                            <constraint firstAttribute="width" constant="150" id="tHp-gh-F4G"/>
+                                            <constraint firstAttribute="trailing" secondItem="wTG-QS-5K2" secondAttribute="trailing" id="tKV-XV-Uty"/>
+                                            <constraint firstItem="2kB-17-h2v" firstAttribute="top" secondItem="wTG-QS-5K2" secondAttribute="bottom" constant="10" id="yq9-fm-a4F"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="462-Gq-4h0">
+                                        <rect key="frame" x="25" y="275" width="364" height="130"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s0K-2y-C5D" customClass="CustomTextFieldAnimated" customModule="GymsCouch" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="364" height="50"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="eB4-ke-cg3"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="placeHolderText" value="Email*"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="secretInput" value="NO"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="25"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="magicButtonEnabled" value="NO"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="HiddeMagicButton" value="NO"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TmB-ex-efT" customClass="CustomTextFieldAnimated" customModule="GymsCouch" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="80" width="364" height="50"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="oG2-5b-3A1"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="placeHolderText" value="Password*"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="secretInput" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="25"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="s0K-2y-C5D" firstAttribute="top" secondItem="462-Gq-4h0" secondAttribute="top" id="7vb-4b-eic"/>
+                                            <constraint firstAttribute="bottom" secondItem="TmB-ex-efT" secondAttribute="bottom" id="95c-j6-JgQ"/>
+                                            <constraint firstItem="TmB-ex-efT" firstAttribute="top" secondItem="s0K-2y-C5D" secondAttribute="bottom" constant="30" id="Kj2-On-yHV"/>
+                                            <constraint firstAttribute="trailing" secondItem="s0K-2y-C5D" secondAttribute="trailing" id="OH9-20-Wqb"/>
+                                            <constraint firstItem="s0K-2y-C5D" firstAttribute="leading" secondItem="462-Gq-4h0" secondAttribute="leading" id="ReC-6i-BsG"/>
+                                            <constraint firstItem="TmB-ex-efT" firstAttribute="leading" secondItem="462-Gq-4h0" secondAttribute="leading" id="WP3-Rs-z8X"/>
+                                            <constraint firstAttribute="trailing" secondItem="TmB-ex-efT" secondAttribute="trailing" id="e24-RF-P0T"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Zp-j1-3wg" customClass="DesignableView" customModule="GymsCouch" customModuleProvider="target">
+                                        <rect key="frame" x="25" y="505" width="364" height="42"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Raa-uU-2MJ">
+                                                <rect key="frame" x="0.0" y="0.0" width="364" height="42"/>
+                                                <fontDescription key="fontDescription" name="GujaratiSangamMN-Bold" family="Gujarati Sangam MN" pointSize="18"/>
+                                                <state key="normal" title="SIGN IN">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="SignIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bez-eW-KnF"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="Raa-uU-2MJ" secondAttribute="trailing" id="LcS-Zz-1lZ"/>
+                                            <constraint firstItem="Raa-uU-2MJ" firstAttribute="leading" secondItem="1Zp-j1-3wg" secondAttribute="leading" id="MrW-Be-DYB"/>
+                                            <constraint firstItem="Raa-uU-2MJ" firstAttribute="top" secondItem="1Zp-j1-3wg" secondAttribute="top" id="deY-bG-raw"/>
+                                            <constraint firstAttribute="height" constant="42" id="lIn-Ea-vqQ"/>
+                                            <constraint firstAttribute="bottom" secondItem="Raa-uU-2MJ" secondAttribute="bottom" id="pfI-95-dlB"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="gradientColor1">
+                                                <color key="value" red="0.45882352939999999" green="0.82745098039999998" blue="0.87058823529999996" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="gradientColor2">
+                                                <color key="value" red="0.48627450979999998" green="0.93333333330000001" blue="0.79215686269999996" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="21"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="1Zp-j1-3wg" firstAttribute="leading" secondItem="9Lf-ze-iWt" secondAttribute="leading" constant="25" id="1Ke-wI-gV5"/>
+                                    <constraint firstItem="bep-ng-V6M" firstAttribute="top" secondItem="9Lf-ze-iWt" secondAttribute="top" constant="40" id="Fav-SC-WFW"/>
+                                    <constraint firstItem="462-Gq-4h0" firstAttribute="leading" secondItem="9Lf-ze-iWt" secondAttribute="leading" constant="25" id="Ifr-k4-eEa"/>
+                                    <constraint firstItem="1Zp-j1-3wg" firstAttribute="top" secondItem="462-Gq-4h0" secondAttribute="bottom" constant="100" id="JPe-yI-LPX"/>
+                                    <constraint firstItem="462-Gq-4h0" firstAttribute="top" secondItem="bep-ng-V6M" secondAttribute="bottom" constant="35" id="KRd-HT-h8d"/>
+                                    <constraint firstItem="bep-ng-V6M" firstAttribute="leading" secondItem="9Lf-ze-iWt" secondAttribute="leading" constant="25" id="Vge-Lk-7Dv"/>
+                                    <constraint firstAttribute="trailing" secondItem="1Zp-j1-3wg" secondAttribute="trailing" constant="25" id="aHj-He-9XO"/>
+                                    <constraint firstAttribute="trailing" secondItem="462-Gq-4h0" secondAttribute="trailing" constant="25" id="wEr-BS-lW8"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="9Lf-ze-iWt" secondAttribute="bottom" id="5b8-yJ-u1t"/>
+                            <constraint firstItem="9Lf-ze-iWt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="IuP-Tg-rTS"/>
+                            <constraint firstItem="9Lf-ze-iWt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="QpU-zj-dmd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9Lf-ze-iWt" secondAttribute="trailing" id="aje-AG-9l9"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="s0K-2y-C5D" id="Qsu-e7-DQr"/>
+                        <outlet property="passwordTextField" destination="TmB-ex-efT" id="Qry-d8-tHn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="666.66666666666674" y="20.758928571428569"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="loading" width="512" height="512"/>
+        <image name="splash" width="612" height="612"/>
+    </resources>
 </document>
