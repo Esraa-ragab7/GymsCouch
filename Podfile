@@ -8,5 +8,8 @@ target 'GymsCouch' do
   # Pods for GymsCouch
 
   pod 'Alamofire', '~> 5.0.0-beta.5'
-
+  pod 'IQKeyboardManagerSwift'
+  pod 'Kingfisher', '~> 5.5.0'
+  pod 'ViewAnimator'
+  
 end
