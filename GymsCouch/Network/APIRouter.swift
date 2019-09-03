@@ -10,31 +10,50 @@ import Alamofire
 
 enum APIRouter: URLRequestConvertible {
     
+    case getGyms(queries: [Queries])
+    case getGymDetail(id: String)
+    
     // MARK: - HTTPMethod
     private var method: HTTPMethod {
         switch self {
-            
+        case .getGyms, .getGymDetail:
+            return .get
         }
     }
     
     // MARK: - Path
     private var path: String {
         switch self {
-        
+        case .getGyms, .getGymDetail:
+            return "/gyms"
         }
     }
     
     // MARK: - Parameters
     private var parameters: Parameters? {
         switch self {
-            
+        case .getGyms, .getGymDetail:
+            return nil
         }
     }
     
     // MARK: - Headers
     private var queries: [Queries]? {
         switch self {
-            
+        case .getGyms(let queries):
+            return queries
+        case .getGymDetail:
+            return nil
+        }
+    }
+    
+    // MARK: - Dynamic Parameter
+    private var dynamicParam: String? {
+        switch self {
+        case .getGyms:
+            return nil
+        case .getGymDetail(let id):
+            return id
         }
     }
     
@@ -42,7 +61,7 @@ enum APIRouter: URLRequestConvertible {
     func asURLRequest() throws -> URLRequest {
         let url = Constants.ProductionServer.baseURL
         
-        var components = URLComponents(string: "\(url)\(path)")!
+        var components = URLComponents(string: "\(url)\(path)\(dynamicParam ?? "")")!
         
         // Add Queries
         if let queries = queries {
