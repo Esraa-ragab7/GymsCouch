@@ -10,8 +10,9 @@ import Foundation
 
 struct Constants {
     struct ProductionServer {
-        static let ip = ""
-        static let baseURL = ""
+        static let ip = "http://35.237.146.248"
+        static let baseURL = "http://35.237.146.248/api/gyms"
+        static let apiKey = "53c3a341d92acf59d9b35c35ddbc5fc4bf587dd7e643a65c3766dada6a7df7c1"
     }
     
     struct APIParameterKey {
@@ -24,8 +25,14 @@ enum HTTPHeaderField: String {
     case contentType = "Content-Type"
     case acceptType = "Accept"
     case acceptEncoding = "Accept-Encoding"
+    case language = "en"
+    case country = "AE"
+    case apiKey = "53c3a341d92acf59d9b35c35ddbc5fc4bf587dd7e643a65c3766dada6a7df7c1"
 }
 
 enum ContentType: String {
     case json = "application/json"
+    case apiKey = "X-api-key"
+    case country = "Country"
+    case language = "Accept-Language"
 }

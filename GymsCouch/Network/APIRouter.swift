@@ -61,7 +61,9 @@ enum APIRouter: URLRequestConvertible {
         
         // Common Headers
         urlRequest.setValue(ContentType.json.rawValue, forHTTPHeaderField: HTTPHeaderField.acceptType.rawValue)
-        urlRequest.setValue(ContentType.json.rawValue, forHTTPHeaderField: HTTPHeaderField.contentType.rawValue)
+        urlRequest.setValue(ContentType.language.rawValue, forHTTPHeaderField: HTTPHeaderField.language.rawValue)
+        urlRequest.setValue(ContentType.country.rawValue, forHTTPHeaderField: HTTPHeaderField.country.rawValue)
+        urlRequest.setValue(ContentType.apiKey.rawValue, forHTTPHeaderField: HTTPHeaderField.apiKey.rawValue)
         
 //        if let accessToken = User.shared?.token {
 //            urlRequest.setValue("Bearer \(accessToken)", forHTTPHeaderField: HTTPHeaderField.authentication.rawValue)
