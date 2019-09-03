@@ -7,24 +7,44 @@
 //
 
 import UIKit
+import Kingfisher
 
 class GymDetailsViewController: UIViewController {
 
+    // MARK: - Outlets
+    @IBOutlet weak var gymImage: UIImageView!
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var locationNameLabel: UILabel!
+    @IBOutlet weak var timeLabel: UILabel!
+    @IBOutlet weak var facilitiesLabel: UILabel!
+    
+    var gymDetailsViewModel: GymDetailsViewModel!
+    
+    // MARK: - View Controller Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        updateScreen()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    // MARK: - Back Action
+    @IBAction func backAction(_ sender: Any) {
+        navigationController?.popViewController(animated: true)
     }
-    */
+    
+}
 
+// MARK: - Private Functions
+extension GymDetailsViewController {
+    
+    func updateScreen() {
+        gymImage.kf.setImage(with: URL(string: gymDetailsViewModel.image))
+        nameLabel.text = gymDetailsViewModel.name
+        descriptionLabel.text = gymDetailsViewModel.description
+        locationNameLabel.text = gymDetailsViewModel.location
+        timeLabel.text = gymDetailsViewModel.time
+        facilitiesLabel.text = gymDetailsViewModel.facilities
+    }
+    
 }
